@@ -6,7 +6,7 @@ import jakarta.persistence.Table;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "activities")
+@Table(name = "VeterinaryAttentions")
 public class VeterinaryAttention {
     private Long id;
     private String petName;
