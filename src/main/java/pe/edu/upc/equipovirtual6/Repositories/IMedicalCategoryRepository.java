@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import pe.edu.upc.equipovirtual6.entitites.MedicalCategory;
 
 @Repository
-public interface iMedicalCategoryRepository extends JpaRepository<MedicalCategory,Long> {
+public interface IMedicalCategoryRepository extends JpaRepository<MedicalCategory,Long> {
 }
