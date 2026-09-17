@@ -9,7 +9,7 @@ import java.time.LocalDate;
 public class VeterinaryAttention {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long attentionId;
     @Column(name = "petName",length = 30,nullable = false)
     private String petName;
 
@@ -39,7 +39,7 @@ public class VeterinaryAttention {
     }
 
     public VeterinaryAttention(Long id, String petName, String ownerName, String description, String veterinarian, LocalDate attentionDate, String diagnosis, Double cost, String status) {
-        this.id = id;
+        this.attentionId = attentionId;
         this.petName = petName;
         this.ownerName = ownerName;
         this.description = description;
@@ -52,12 +52,12 @@ public class VeterinaryAttention {
 
     // Get y set
 
-    public Long getId() {
-        return id;
+    public Long getattentionId() {
+        return attentionId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setattentionId(Long id) {
+        this.attentionId = id;
     }
 
     public String getPetName() {
