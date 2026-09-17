@@ -1,7 +1,12 @@
 package pe.edu.upc.equipovirtual6.entitites;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "activities")
 public class VeterinaryAttention {
     private Long id;
     private String petName;
