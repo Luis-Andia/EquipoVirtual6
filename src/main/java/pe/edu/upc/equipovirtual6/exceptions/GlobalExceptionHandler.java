@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import pe.edu.upc.demosi.dtos.ErrorResponse;
+import pe.edu.upc.equipovirtual6.dtos.*;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {

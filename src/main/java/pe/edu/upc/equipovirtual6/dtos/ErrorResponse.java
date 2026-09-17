@@ -1,5 +1,6 @@
 package pe.edu.upc.equipovirtual6.dtos;
 
+
 public class ErrorResponse {
     private int status;
     private String message;
