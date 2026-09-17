@@ -1,21 +1,37 @@
 package pe.edu.upc.equipovirtual6.entitites;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "VeterinaryAttentions")
+@Table(name = "VeterinaryAttention")
 public class VeterinaryAttention {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "petName",length = 30,nullable = false)
     private String petName;
+
+    @Column(name = "ownerName",nullable = false,length = 150)
     private String ownerName;
+
+   @Column(name = "description",length = 30,nullable = false)
     private String description;
+
+   @Column(name = "veterinarian",length = 30,nullable = false)
     private String veterinarian;
+
+    @Column(name = "attentionDate", nullable = false)
     private LocalDate attentionDate;
+
+    @Column(name = "diagnosis",length = 30,nullable = false)
     private String diagnosis;
+
+    @Column(name = "cost", nullable = false)
     private Double cost;
+
+    @Column(name = "status",length = 30,nullable = false)
     private String status;
 
     // Constructores
